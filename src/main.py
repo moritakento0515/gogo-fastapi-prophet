@@ -41,7 +41,7 @@ def predict(data: InputData):
 
             results[value] = prediction_label
         except FileNotFoundError:
-            results[value] = f"Error: Model file '{model_path}' not found"
+            results[value] = f"交差点番号'{model_path}'はこのモデルではサポートされていません"
         except Exception as e:
             results[value] = f"Error: {str(e)}"
 
