@@ -1,0 +1,4 @@
+issue  「modelsディレクトリのファイルが見つからないといわれた」
+
+(myenv) mk@MyComputer:~/test/fastAPI_prophet/src$ uvicorn main:app --reload（APIの実行時）のディレクトリの位置が大事だった。
+(myenv) mk@MyComputer:~/test/fastAPI_prophet$     uvicorn src.main:app --reload　が正解。
