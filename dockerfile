@@ -13,4 +13,6 @@ COPY ./src /app/src
 COPY ./models /app/models
 
 # FastAPI アプリの起動
-CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000", "--log-level", "debug"]
+
+
